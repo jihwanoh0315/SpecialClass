@@ -1,0 +1,17 @@
+CLASS 1
+	CREATE WINDOW
+	
+WHAT TO DO IN THIS CHAPTER
+
+1. Setting
+- Add OpenGL, GLFW and GLAD in projects folder from the WEB and CFile
+- Link libs and files
+
+2. Create the Window
+- Create window 
+- Set viewport
+
+3. Set easy input
+- Escape to close
+
+4. Render background color

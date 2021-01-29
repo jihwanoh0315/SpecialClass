@@ -1,0 +1,15 @@
+CLASS 2
+	DRAW IMAGES
+
+WHAT TO DO IN THIS CHAPTER
+
+1. Send vertices(data) with VBO
+
+2. Create Shaders
+-Vertex shader
+-Fragment shader
+-Read shader from the file
+-Create in class
+
+3. Draw triangle
+-get vertecies from the top
