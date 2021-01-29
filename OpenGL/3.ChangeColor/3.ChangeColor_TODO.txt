@@ -1,0 +1,16 @@
+CLASS 3
+	CHANGE COLOR
+
+WHAT TO DO IN THIS CHAPTER
+
+1. Create Square
+- Only with 4 vertices with indices
+
+2. Change the color in hard coding
+
+3. Set the color of the square depending on the time
+- Use uniform
+- Create uniform functions to Shader class
+
+4. Imply the ImGui
+- make user can change the shader between two

@@ -1,16 +1,16 @@
 /* Start Header -------------------------------------------------------
-File Name: basicFragmentShader.frag
-Purpose: fragement shader for basic shader
+File Name: colorVertexShader.vert
+Purpose: vertex shader for color shader
 Language: glsl
 Platform: vs2019 , window 10
 Project: SpecialClass
 Author: Jihwan Oh, jihwan315@gmail.com
-Creation date: 01.07.2021
+Creation date: 01.09.2021
 End Header --------------------------------------------------------*/
 #version 330 core
-out vec4 FragColor;
+layout (location = 0) in vec3 aPos;
 
 void main()
 {
-    FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);
+    gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);
 }
