@@ -1,0 +1,8 @@
+CLASS 5
+	TRANSFORMATION
+
+WHAT TO DO IN THIS CHAPTER
+
+1. Transform the Object
+- translate with matrix
+- rotate with axis
