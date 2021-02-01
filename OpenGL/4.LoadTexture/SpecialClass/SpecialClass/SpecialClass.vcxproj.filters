@@ -20,6 +20,9 @@
     <Filter Include="Shaders\3.color">
       <UniqueIdentifier>{a4b1a45b-5e4d-4141-9385-9c8bff92d176}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\4.texture">
+      <UniqueIdentifier>{234adc36-4da2-45b6-bb12-e338688a83a3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -79,6 +82,9 @@
     <ClInclude Include="imgui\imstb_textedit.h">
       <Filter>ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Background</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\basicFragmentShader.frag">
@@ -92,6 +98,12 @@
     </None>
     <None Include="shaders\colorVertexShader.vert">
       <Filter>Shaders\3.color</Filter>
+    </None>
+    <None Include="shaders\textureVertextShader.vert">
+      <Filter>Shaders\4.texture</Filter>
+    </None>
+    <None Include="shaders\textureFragmentShader.frag">
+      <Filter>Shaders\4.texture</Filter>
     </None>
   </ItemGroup>
 </Project>

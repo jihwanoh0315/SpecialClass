@@ -1,0 +1,11 @@
+CLASS 4
+	LOAD TEXTURE
+
+WHAT TO DO IN THIS CHAPTER
+
+1. Load texture
+
+2. Load second texture
+
+3. Mix the two texture
+- make it possible to change ratio with ImGui
