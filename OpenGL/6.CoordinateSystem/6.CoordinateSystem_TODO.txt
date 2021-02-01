@@ -1,0 +1,26 @@
+CLASS 6
+    COORDINATE SYSTEM
+
+WHAT TO DO IN THIS CHAPTER
+**
+    Move the object using coordinate system
+    
+    Local space ->(model matrix)-> World space
+    ->(view matrix)-> View space ->(projection matrix)-> Clip space
+    
+    >> Clip = Projection x View x Model x Local
+**
+
+1. Set model matrix (to World space)
+
+2. Set view matrix (Camera)
+    - Don't have camera now, so set with arbitrary value
+    
+3. Set projection matrix (Screen)
+    - Set with screen size
+    
+4. Send it to the shader
+    - Use uniform
+    
+5. Calculate the coordinate of object with sent data in shader
+    -> Clip = Projection x View x Model x Local
