@@ -1,0 +1,25 @@
+CLASS 7
+	CAMERA
+
+WHAT TO DO IN THIS CHAPTER
+**
+	To set the view matrix for each object,
+	we need to create the camera with class
+**
+
+1. Set the setting values
+- Field of view, movement speed ...
+
+2. Set the position and target of camera
+
+3. Get direction with position and target
+- Use simple vector calculation
+
+4. Get right and up direction of camera with world up dir (0,1,0)
+- Use cross product between your vector
+
+5. Set the view matrix with look at function
+- Use transpose matrix to get easy with inverse matrix
+- You can simply do this with glm::lookat function
+
+6. Set the projection matrix with screen and FoV angle
