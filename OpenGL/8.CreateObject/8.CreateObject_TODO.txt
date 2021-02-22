@@ -1,0 +1,46 @@
+CLASS 8
+	CREATE OBJECT
+
+WHAT TO DO IN THIS CHAPTER
+**
+	Create the object by class
+	Object need to have data for model matrix
+	Load OBJ file to get infos (vertices, indicies...)
+	Set vertex array buffers of Object with model
+**
+
+A. Create Mesh (Model) from OBJ File
+	/******************************************************
+	 OBJ FILE FORMAT
+
+	 v - vertices
+	 vt - texture coordinate
+	 f - there'll be more than 3 infos
+		 1. v v v - only contain vertices indices
+		 2. v/vt v/vt v/vt - contain vertice, texture indices
+		 3. v/vt/vn v/vt/vn v/vt/vn - vertice, texture, normal indices
+	 
+	*******************************************************/
+	1. Use File I/O go get values
+		- vertices
+		- indices
+		- texture coordinate
+		- tex coord indices
+		- vertex normal
+		- vnorm indices
+		
+	2. Normalize the vertex with it's size
+		- Get maximum difference of each x, y, z vertices
+		- Set maximum difference as 1, and divide others by it
+
+B. Create Object
+	1. Create member variables
+		- VAO
+		- Vertex Buffer
+		- Index Buffer
+		- Model
+		- Texture (if need)
+		
+	2. Set values in while loop
+		- Set model pos with shader and camera
+		- Draw
