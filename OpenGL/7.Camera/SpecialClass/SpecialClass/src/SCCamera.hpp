@@ -14,7 +14,14 @@ description:
 #include <glm/glm.hpp>
 
 struct GLFWwindow;
+/****************************************************************************
+\Class Name : Camera
+\Role :
+	This class contains codes to do this....
+	- Create view, projection matrix depends on camera's position
+	- Move with keyboard input
 
+*****************************************************************************/
 class Camera
 {
 public:
@@ -35,23 +42,26 @@ public:
 
 private:
 	void Moving(GLFWwindow* window_, float dt_);
-	glm::mat4 m_projectionMatrix;
-	glm::mat4 m_viewMatrix;
 
-	glm::vec3 m_position;
-	glm::vec3 m_target;
-	glm::vec3 m_direction;
-	glm::vec3 m_right;
-	glm::vec3 m_up;
+	// Matrix for coordinate system
+	glm::mat4 m_projectionMatrix;	//!< projection matrix
+	glm::mat4 m_viewMatrix;				//!< view matrix
 
-	float m_FoV;
-	float m_cameraSpeed;
-	float m_mouseSpeed;
 
-	unsigned int m_screenWidth;
-	unsigned int m_screenHeight;
+	glm::vec3 m_position;		//!< camera position
+	glm::vec3 m_target;			//!< target position
+	glm::vec3 m_direction;	//!< direction camera see
+	glm::vec3 m_right;			//!< right direction of cam
+	glm::vec3 m_up;				//!< up direction of cam
 
-	bool m_isMoving;
+	float m_FoV;						//!< angle of field of view
+	float m_cameraSpeed;	//!< camera moving speed
+	float m_mouseSpeed;		//!< mouse moving speed
+
+	unsigned int m_screenWidth;	//!< width of current screen
+	unsigned int m_screenHeight;	//!< height of current screen
+
+	bool m_isMoving;	// check camera need to move
 };
 
 #endif // !CAMERA_HPP

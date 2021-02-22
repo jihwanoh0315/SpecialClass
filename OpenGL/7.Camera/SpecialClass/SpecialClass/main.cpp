@@ -265,15 +265,6 @@ int main(void)
     /*********************************************************/
     //* TRANSFORM 
     //      - Transform(translate, rotate) the object with glm
-    //* Set
-    //    1. Generate the texture
-    //    2. Bind the buffer to proper target
-    //    3. set the texture wrapping/filtering options
-    //    4. load and generate the texture
-    //    5. Free the image after loading
-    //    6. Set the attribute of texture coordinate
-    //* Draw
-    //    7. Bind the texture before draw
     /*********************************************************/
     glm::mat4 trans = glm::mat4(1.0f);
     trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));

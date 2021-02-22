@@ -270,7 +270,7 @@ int main(void)
 
     /*********************************************************/
     //* TRANSFORM 
-    //      - transform the object with matrices
+    //      - Transform(translate, rotate) the object with glm
     /*********************************************************/
     glm::mat4 trans = glm::mat4(1.0f);
     trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
