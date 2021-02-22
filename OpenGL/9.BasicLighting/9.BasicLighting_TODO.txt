@@ -1,0 +1,29 @@
+CLASS 9
+	BASIC LIGHTING
+
+WHAT TO DO IN THIS CHAPTER
+**
+	Do the Phong Shading
+	Three lighting values are set the color of vertex
+	and we add them to set color
+	*NEED TO get normals from each triangles on object
+**
+1. Ambient
+	- Color shown by some far-far light source like moon
+
+2. Diffuse
+	- Use dot product for each vertex between light and normal vector
+	** don't forget to normalize the vertex normal
+	
+3. Specular
+	- Get reflect vector with normal and light
+	- dot to the eye-to-vertex vector
+	- Should be different depending on model, but not now
+
+***
+	HOW TO GET VERTEX NORMAL
+***
+1. Get the three vertices from vertex vector with index vector
+2. Use the cross product with those values
+3. If it contain many normals, add them and normalize it
+
